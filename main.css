@@ -1,0 +1,337 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  /* border: 0.5px solid #20c20e; */
+}
+
+body {
+  background-color: #f6d7a6;
+}
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #f2c377;
+  height: 15rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-sikkim {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.title-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header .title {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: rgb(112, 73, 11);
+}
+
+.icon-khadiindia {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+
+.navigation {
+  background-color: #f5d096;
+  height: 5rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* gap: 5px; */
+}
+
+.navigation > li {
+  list-style-type: none;
+}
+
+.navigation svg {
+  padding-top: 0.3rem;
+}
+
+.navigation a {
+  color: #70490b;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100%;
+  height: 30rem;
+  background-color: #f2c377;
+}
+
+.fade-out {
+  transition: opacity 1s ease-in-out; 
+}
+
+.portraits {
+  padding: 1.5rem;
+  background-color:#f8deb5;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.portraits .clipped {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.welcome {
+  padding: 2rem 1.5rem;
+  /* height: 20rem; */
+  background-color: #f5d096;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 1.6rem;
+}
+
+.welcome .welcome-text {
+  background-color: rgb(205, 134, 20);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  display: inline;
+
+}
+
+.welcome .welcome-contents {
+    padding: 1rem 2rem;
+  color: rgb(112, 73, 11);
+}
+
+.welcome ol {
+    margin-left: 8rem;
+}
+
+.contact_us {
+  background-color: #f2c377;
+  color: rgb(112, 73, 11);
+  font-size: 1.8rem;
+  padding: 2rem 10%;
+  /* margin: 0 auto; */
+}
+
+.btn {
+  background-color: rgb(205, 134, 20);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  display: inline-block;
+  }
+
+.contact_us p {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact_us li {
+    margin-bottom: 1.5rem;
+  }
+  
+/* ================== GALLERY ==================== */
+.gallery {
+  /* height: 25rem; */
+  background-color: #f2c377;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* ================== GALLERY-END ==================== */
+
+/* ================= EVENT START ==================== */
+.events {
+  /* height: 20rem; */
+  margin-top: 1rem;
+  background-color: #f8deb5;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.events .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 33%;
+}
+
+.card .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+.card a {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+
+/* On mouse-over, add a deeper shadow */
+.events .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.events .container {
+  padding-top: 2rem; 
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-bottom: 2rem; 
+}
+/* ================= EVENT END ==================== */
+
+.footer {
+  /* height: 20rem; */
+  background-color: #f5d096;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 33%;
+  }
+
+.footer .address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+.footer .address li {
+    font-size: 1.2rem;
+    color: #422b06;
+    font-weight: 600;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+  }
+.footer .add-icon img {
+    width: 3rem;
+  }
+  
+.footer .sk-icon img {
+    width: 3rem;
+  }
+.footer .add-text {
+    text-transform: uppercase;
+  }
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+.links li {
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.2rem;
+  }
+
+.imp-links {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+.address a {
+    text-decoration: none;
+  }
+
+.social-media-title {
+    font-size: 1.8rem;
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+.links li {
+    display: flex;
+    align-items: center;
+  }
+  
+.chevron-right img {
+    width: 2.5rem;
+  }
+
+  .address-text-2 {
+    font-size: 1.6rem;
+  }
+
+.js {
+    justify-self: start;
+    margin-right: 7rem;
+  }
+
+.footer .copyright-text {
+    color: #422b06;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-self: center;
+  }
