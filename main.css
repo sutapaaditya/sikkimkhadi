@@ -54,19 +54,26 @@ html {
 
 
 .navigation {
-  background-color: #f5d096;
   height: 5rem;
-  padding-left: 1rem;
-  padding-right: 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  /* gap: 5px; */
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #f5d096;
 }
 
 .navigation > li {
   list-style-type: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.5s ease;
+}
+
+.navigation > li:hover {
+  /* background-color: rgb(205, 134, 20); */
+  background-color: #e9991a;
 }
 
 .navigation svg {
@@ -77,6 +84,11 @@ html {
   color: #70490b;
   font-size: 1.6rem;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover { 
+  color: white;
 }
 
 .carousel {
@@ -105,7 +117,6 @@ html {
 
 .welcome {
   padding: 2rem 1.5rem;
-  /* height: 20rem; */
   background-color: #f5d096;
 
   display: flex;
