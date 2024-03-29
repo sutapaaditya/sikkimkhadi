@@ -31,8 +31,16 @@ html {
   display: flex;
   align-items: center;
   padding-left: 0.5rem;
-  
 }
+
+.icon-sikkim > img {
+  width: 104px;
+}
+
+.sikkim-khadi-icon > img {
+  width: 88px;
+}
+
 .container .hamburger {
   display:none;
 }
