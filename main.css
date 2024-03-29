@@ -22,6 +22,7 @@ html {
 .header {
   background-color: #f2c377;
   height: 15rem;
+  padding: 1rem;
 
   display: flex;
   justify-content: space-between;
@@ -41,21 +42,51 @@ html {
   width: 88px;
 }
 
+.icon-khadiindia > img {
+  width: 136px;
+}
+
 .container .hamburger {
   display:none;
 }
 
 .bar1,
-.bar2,
 .bar3 {
-  background-color: black;
+  background-color: rgb(112, 73, 11);
   height:2px;
   width:30px;
   margin:6px;
   border-radius:25px;
-  
-
 } 
+
+.bar2 {
+  background-color: rgb(112, 73, 11);
+  height:2px;
+  width:15px;
+  margin:6px;
+  border-radius:25px;
+  transform: translateX(100%)
+}
+
+.mobile-header {
+  padding: 1.5rem;
+  background-color: #f2c377;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-header-title {
+  /* border: 0.5px solid red; */
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: rgb(112, 73, 11);
+  transform: translateX(-8rem);
+
+}
+
 
 .title-text {
   display: flex;
@@ -372,14 +403,57 @@ html {
     font-weight: 600;
     align-self: center;
   }
+@media (max-width: 1920px) {
+    .mobile-header-title {
+      display: none;
+    }
+}
 
 @media  (max-width:810px) {
+    .mobile-header-title {
+      display: flex;
+      transform: translateX(8rem);
+    }
+
     .navigation {
       display:none;
+    }
+
+    .title {
+      display: none;
     }
 
    .container .hamburger {
       display:block;
     } 
   
+  }
+
+  @media (max-width: 460px) {
+      .icon-sikkim > img {
+        width: 88px;
+      }
+
+      .sikkim-khadi-icon > img {
+        width: 72px;
+        transform: translateY(1.8rem);
+      }
+
+      .icon-khadiindia > img {
+        width: 112px;
+      }
+
+
+    .mobile-header-title {
+      font-size: 2rem;
+      transform: translateX(4rem);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container .hamburger {
+      display:block;
+      transform: translateY(-25px);
+    }
   }
