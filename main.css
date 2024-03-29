@@ -31,7 +31,23 @@ html {
   display: flex;
   align-items: center;
   padding-left: 0.5rem;
+  
 }
+.container .hamburger {
+  display:none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: black;
+  height:2px;
+  width:30px;
+  margin:6px;
+  border-radius:25px;
+  
+
+} 
 
 .title-text {
   display: flex;
@@ -347,4 +363,15 @@ html {
     font-size: 1.6rem;
     font-weight: 600;
     align-self: center;
+  }
+
+@media  (max-width:810px) {
+    .navigation {
+      display:none;
+    }
+
+   .container .hamburger {
+      display:block;
+    } 
+  
   }
