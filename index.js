@@ -1,3 +1,17 @@
+const hamburger = document.querySelector(".hamburger");
+const closeButton = document.querySelector(".close-button");
+const mobilenav = document.querySelector(".mobilenav");
+
+
+hamburger.addEventListener('click', () => {
+  mobilenav.classList.toggle("navopen");
+    
+})
+
+closeButton.addEventListener('click', () =>{
+  mobilenav.classList.toggle("navopen");
+})
+
 let pics =[
   {
     "pic":"./assets/images/carousel/buddha.jpg",

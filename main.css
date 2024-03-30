@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 112rem;
   margin: 0 auto;
 }
 
@@ -75,6 +75,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .mobile-header-title {
@@ -87,6 +88,40 @@ html {
 
 }
 
+.mobilenav {
+  background-color: #f2c377;
+  width:100%;
+  height:100vh;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position:fixed; 
+  z-index:2;
+  top: -0.025%;
+  right:-1760px;
+  padding:16px;
+  text-transform: uppercase;
+  transition:transform 0.5s
+}
+
+.mobilenav a {
+text-decoration:none; 
+color: rgb(112, 73, 11);
+margin: 15px;;
+font-size:23px; 
+}
+
+.close-button {
+  width:25px;
+  position:absolute;
+  top: 30px;
+  right:30px;
+}
+
+.navopen {
+  transform: translateX(-1760px );
+}
 
 .title-text {
   display: flex;
@@ -403,6 +438,9 @@ html {
     font-weight: 600;
     align-self: center;
   }
+
+
+
 @media (max-width: 1920px) {
     .mobile-header-title {
       display: none;
@@ -430,6 +468,9 @@ html {
   }
 
   @media (max-width: 460px) {
+    .container {
+      max-width: 100%;
+    }
       .icon-sikkim > img {
         width: 88px;
       }
@@ -455,5 +496,12 @@ html {
     .container .hamburger {
       display:block;
       transform: translateY(-25px);
+    }
+    .portraits .clipped { 
+      width: 100px;
+    }
+  
+    .footer .footer-content { 
+      flex-direction: column;
     }
   }
