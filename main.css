@@ -28,6 +28,12 @@ html {
   justify-content: space-between;
 }
 
+/* helper class */
+.fixedPosition {
+  position: fixed;
+  overflow: hidden;
+}
+
 .icon-sikkim {
   display: flex;
   align-items: center;
@@ -198,6 +204,7 @@ font-size:23px;
   clip-path: circle(50% at 50% 50%);
 }
 
+/* welcome section */
 .welcome {
   padding: 2rem 1.5rem;
   background-color: #f5d096;
@@ -229,6 +236,7 @@ font-size:23px;
 .welcome ol {
     margin-left: 8rem;
 }
+/* welcome section ends */
 
 .contact_us {
   background-color: #f2c377;
@@ -290,7 +298,6 @@ font-size:23px;
 
 /* ================= EVENT START ==================== */
 .events {
-  /* height: 20rem; */
   margin-top: 1rem;
   background-color: #f8deb5;
   padding: 2rem;
@@ -449,7 +456,25 @@ font-size:23px;
       display:block;
       transform: translateY(15px);
     } 
+
+    .portraits .clipped { 
+      width: 150px;
+    }
   
+    .welcome .welcome-contents {
+      padding: 1rem 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .welcome ol {
+      margin-top: 1rem;
+      margin-left: 4rem;
+      font-size: 1.6rem;
+    }
+
+    .welcome ol > li {
+      margin-bottom: 1rem;
+    }
   }
 
   @media (max-width: 460px) {
@@ -466,7 +491,6 @@ font-size:23px;
       width: 112px;
     }
 
-
     .mobile-header-title {
       font-size: 2rem;
       display: flex;
@@ -481,7 +505,92 @@ font-size:23px;
       width: 100px;
     }
 
-    .footer .footer-content { 
+    .welcome {
+      padding: 2rem 1.5rem;
+      background-color: #f5d096;
+
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      font-size: 1.6rem;
+    }
+
+    .welcome .welcome-text {
+      font-weight: 500;
+      font-size: 1.8rem;
+      padding: 2rem 4rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .welcomeTo {
+      font-size: 1.2rem;
+    }
+
+    .welcome .welcome-contents {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      margin-bottom: 5px;
+    }
+
+    .welcome ol {
+      margin: 1rem auto 0 1rem;
+      font-size: 1.5rem;
+    }
+
+    .welcome ol > li {
+      margin-bottom: 1rem;
+    }
+
+    .events {
       flex-direction: column;
     }
+    .events .card {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .card .card-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+    .card a {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
+
+    .footer > * {
+      /* border: 0.5px solid #20c20e; */
+      display: block;
+    }
+
+    .footer-content > * {
+      /* border: 0.5px solid #d36135; */
+      margin-top: 10px;
+    }
+
+    .footer .footer-content {
+      display: block;
+    }
+
+    .js .address-text, 
+    .js .social-media-title {
+      display: none;
+    }
+
+    .js {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .links2 .add-icon {
+      display: none;
+    } 
+
   }
