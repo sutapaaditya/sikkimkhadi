@@ -15,13 +15,13 @@ html {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 112rem;
   margin: 0 auto;
 }
 
 .header {
   background-color: #f2c377;
-  height: 16rem;
+  height: 15rem;
   padding: 1rem;
 
   display: flex;
@@ -42,17 +42,96 @@ html {
   width: 88px;
 }
 
-.title-text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.sikkim-khadi-icon > img {
+  width: 88px;
 }
 
-.header .title {
+.icon-khadiindia > img {
+  width: 136px;
+}
+
+.NavMobile {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f2c377;
+  height: 0.5rem;
+}
+
+.hamburger {
+  display:none;
+}
+
+.bar1,
+.bar3 {
+  background-color: rgb(112, 73, 11);
+  height:1.5px;
+  width:30px;
+  margin:6px;
+  border-radius:25px;
+} 
+
+.bar2 {
+  background-color: rgb(112, 73, 11);
+  height:1.5px;
+  width:15px;
+  margin:6px;
+  border-radius:25px;
+  transform: translateX(100%)
+}
+
+.mobile-header {
+  padding: 1.5rem;
+  background-color: #f2c377;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-header-title {
+  background-color: #f2c377;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 900;
   color: rgb(112, 73, 11);
+  padding: 0 0 1rem 0;
+}
+
+.mobilenav {
+  background-color: #f2c377;
+  width:100%;
+  height:100vh;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position:fixed; 
+  z-index:2;
+  top:0;
+  right:-2000px;
+  padding:16px;
+  text-transform: uppercase;
+  transition:transform 0.5s
+}
+
+.mobilenav a {
+text-decoration:none; 
+color: rgb(112, 73, 11);
+margin: 15px;;
+font-size:23px; 
+}
+
+.close-button {
+  width:25px;
+  position:absolute;
+  top: 30px;
+  right:30px;
+}
+
+.navopen {
+  transform: translateX(-2000px );
 }
 
 .icon-khadiindia {
@@ -60,7 +139,6 @@ html {
   align-items: center;
   padding-right: 0.5rem;
 }
-
 
 .navigation {
   height: 5rem;
@@ -357,4 +435,58 @@ html {
     font-size: 1.6rem;
     font-weight: 600;
     align-self: center;
+  }
+
+@media  (max-width:810px) {
+    .mobile-header-title {
+      font-size: 2.75rem;
+    }
+
+    .navigation {
+      display:none;
+    }
+
+    .title {
+      display: none;
+    }
+
+   .hamburger {
+      display:block;
+      transform: translateY(15px);
+    } 
+  
+  }
+
+  @media (max-width: 460px) {
+    .icon-sikkim > img {
+      width: 88px;
+    }
+
+    .sikkim-khadi-icon > img {
+      width: 72px;
+      transform: translateY(1.8rem);
+    }
+
+    .icon-khadiindia > img {
+      width: 112px;
+    }
+
+
+    .mobile-header-title {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hamburger {
+      display:block;
+      transform: translateY(15px);
+    }
+    .portraits .clipped { 
+      width: 100px;
+    }
+
+    .footer .footer-content { 
+      flex-direction: column;
+    }
   }
