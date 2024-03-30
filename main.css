@@ -46,14 +46,22 @@ html {
   width: 136px;
 }
 
-.container .hamburger {
+.NavMobile {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f2c377;
+  height: 0.5rem;
+}
+
+.hamburger {
   display:none;
 }
 
 .bar1,
 .bar3 {
   background-color: rgb(112, 73, 11);
-  height:2px;
+  height:1.5px;
   width:30px;
   margin:6px;
   border-radius:25px;
@@ -61,7 +69,7 @@ html {
 
 .bar2 {
   background-color: rgb(112, 73, 11);
-  height:2px;
+  height:1.5px;
   width:15px;
   margin:6px;
   border-radius:25px;
@@ -75,17 +83,16 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .mobile-header-title {
-  /* border: 0.5px solid red; */
+  background-color: #f2c377;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 900;
   color: rgb(112, 73, 11);
-  transform: translateX(-8rem);
-
+  padding: 0 0 1rem 0;
 }
 
 .mobilenav {
@@ -98,8 +105,8 @@ html {
   flex-direction:column;
   position:fixed; 
   z-index:2;
-  top: -0.025%;
-  right:-1760px;
+  top:0;
+  right:-2000px;
   padding:16px;
   text-transform: uppercase;
   transition:transform 0.5s
@@ -120,20 +127,7 @@ font-size:23px;
 }
 
 .navopen {
-  transform: translateX(-1760px );
-}
-
-.title-text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.header .title {
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: rgb(112, 73, 11);
+  transform: translateX(-2000px );
 }
 
 .icon-khadiindia {
@@ -141,7 +135,6 @@ font-size:23px;
   align-items: center;
   padding-right: 0.5rem;
 }
-
 
 .navigation {
   height: 5rem;
@@ -439,18 +432,9 @@ font-size:23px;
     align-self: center;
   }
 
-
-
-@media (max-width: 1920px) {
-    .mobile-header-title {
-      display: none;
-    }
-}
-
 @media  (max-width:810px) {
     .mobile-header-title {
-      display: flex;
-      transform: translateX(8rem);
+      font-size: 2.75rem;
     }
 
     .navigation {
@@ -461,46 +445,42 @@ font-size:23px;
       display: none;
     }
 
-   .container .hamburger {
+   .hamburger {
       display:block;
+      transform: translateY(15px);
     } 
   
   }
 
   @media (max-width: 460px) {
-    .container {
-      max-width: 100%;
+    .icon-sikkim > img {
+      width: 88px;
     }
-      .icon-sikkim > img {
-        width: 88px;
-      }
 
-      .sikkim-khadi-icon > img {
-        width: 72px;
-        transform: translateY(1.8rem);
-      }
+    .sikkim-khadi-icon > img {
+      width: 72px;
+      transform: translateY(1.8rem);
+    }
 
-      .icon-khadiindia > img {
-        width: 112px;
-      }
+    .icon-khadiindia > img {
+      width: 112px;
+    }
 
 
     .mobile-header-title {
       font-size: 2rem;
-      transform: translateX(4rem);
-
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    .container .hamburger {
+    .hamburger {
       display:block;
-      transform: translateY(-25px);
+      transform: translateY(15px);
     }
     .portraits .clipped { 
       width: 100px;
     }
-  
+
     .footer .footer-content { 
       flex-direction: column;
     }
