@@ -1,0 +1,102 @@
+.pageContainer {
+  background-color: #F5D096;
+  border: 1px solid #F1BB67;
+}
+
+.acontents {
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 80%;
+  background-color: #F6D7A6;
+  color: #70490b;
+  font-size: 1.6rem; 
+}
+
+.acontents__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-bottom: 1px solid #F1BB67;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.introduction,
+.bdirectors, 
+.bobjectives, 
+.skvibact {
+  /* border-bottom: 1px solid #F1BB67; */
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+
+}
+
+.introContent {
+  margin-left: 1rem;
+}
+
+.introduction ol,
+.bobjectives ol {
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.introduction ol li {
+  margin-bottom: 0.5rem;
+}
+
+.bdirectors ol {
+  margin-left: 7rem;
+}
+
+.skvib__button a {
+  text-decoration: none;
+  color: #70490b;
+  transition: color 0.5s ease;
+}
+
+.skvib__button a:hover {
+  color: #fff;
+}
+
+.skvib__button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #F1BB67;
+  transition: background-color 0.5s ease;
+}
+
+.skvib__button:hover {
+  background-color: #70490b;
+}
+
+@media (max-width: 786px) {
+  .acontents {
+    max-width: 95%;
+  }
+
+  .introContent {
+    margin-left: 0;
+  }
+
+  .introduction ol,
+  .bobjectives ol {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .sub-heading {
+    margin-left: 1rem;
+  }
+
+  .bdirectors ol {
+    margin-left: 1rem;
+  }
+}

@@ -165,9 +165,13 @@ font-size:23px;
   transition: background-color 0.5s ease;
 }
 
+.nav__active {
+  border: 1px solid #F1BB67;
+  background-color: #F6D7A6;
+}
+
 .navigation > li:hover {
-  /* background-color: rgb(205, 134, 20); */
-  background-color: #e9991a;
+  background-color: #dc9016;
 }
 
 .navigation svg {
