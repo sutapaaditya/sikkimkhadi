@@ -1,0 +1,194 @@
+.gallery {
+  padding: 1rem;
+  position: relative;
+}
+
+.product {
+  position: relative;
+}
+
+.productHeading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.gallery h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #322105;
+  display: inline-block;
+  background-color: #F6D7A6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.gallery .saree {
+  display:grid;
+  grid-template-areas: 
+  "saree1 saree1 saree2"
+  "saree1 saree1 saree2"
+  "saree3 saree4 saree4"
+  "saree3 saree5 saree5"
+  "saree6 saree6 saree7"
+  "saree8 saree9 saree9"
+  "saree10 saree11 saree12";
+  gap: 16px;
+
+  width:100%;
+  height:100%;
+}
+
+#saree1 {
+  grid-area: saree1;
+}
+
+#saree2 {
+  grid-area: saree2;
+}
+
+#saree3 {
+  grid-area: saree3;
+}
+
+#saree4 {
+  grid-area: saree4;
+}
+
+#saree5 {
+  grid-area: saree5;
+}
+
+#saree6 {
+  grid-area: saree6;
+}
+
+#saree7 {
+  grid-area: saree7;
+
+}
+
+#saree8 {
+  grid-area: saree8;
+}
+
+#saree9 {
+  grid-area: saree9;
+}
+
+#saree10 {
+  grid-area: saree10;
+}
+
+#saree11 {
+  grid-area: saree11;
+}
+
+#saree11 {
+  grid-area:saree12;
+}
+
+.product img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+}
+
+.gallery .turmeric {
+  margin-top: 1rem;
+  display:grid;
+  grid-template-areas:
+  "tr1 tr1 tr2 "
+  "tr1 tr1 tr2 "
+  "tr3 tr3 tr5"
+  "tr4 tr4 tr5"
+  "tr7 tr7  tr7";
+  width:100%;
+  height:100%;
+  gap: 16px;
+
+}
+
+#tr1 {
+  grid-area: tr1; 
+
+}
+
+#tr2 {
+  grid-area:tr2;
+}
+
+#tr3 {
+  grid-area: tr3;
+}
+
+#tr4 {
+  grid-area: tr4;
+}
+
+
+#tr5 {
+  grid-area: tr5;
+}
+
+#tr7 {
+  grid-area: tr7;
+}
+
+@media (max-width:1100px) {
+  .gallery .saree {
+    max-width:100%;
+    grid-template-areas:
+    "saree1 saree1"
+    "saree2 saree3"
+    "saree4 saree4"
+    "saree5 saree5"
+    "saree6 saree6"
+    "saree7 saree8"
+    "saree9 saree9"
+    "saree10 saree11"
+    "saree12 saree12 ";
+
+  }
+
+  .gallery .turmeric {
+    max-width:100%;
+    grid-template-areas: 
+    "tr1 tr1"
+    "tr2 tr3"
+    "tr4 tr4"
+    "tr5 tr5"
+    "tr7 tr7";
+  }
+}
+
+
+@media (max-width:768px) {
+  .gallery .saree {
+    max-width:100%;
+    grid-template-areas: 
+    "saree1 saree1"
+    "saree2 saree2"
+    "saree3 saree3"
+    "saree4 saree4"
+    "saree5 saree5"
+    "saree6 saree6"
+    "saree7 saree7"
+    "saree8 saree8"
+    "saree9 saree9"
+    "saree10 saree11"
+    "saree12 saree12";
+  }
+
+  .gallery .turmeric {
+    max-width:100%;
+    grid-template-areas: 
+    "tr1 tr1"
+    "tr2 tr3"
+    "tr4 tr4"
+    "tr5 tr7";
+  }
+}

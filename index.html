@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <!-- fonts end -->
-    <link href="main.css" rel="stylesheet">
-    <script src="index.js" defer></script>
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/maingallery.css">
+    <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -25,15 +26,15 @@
         <!-- hamburger  -->
         <!-- mobile side drawer  -->
         <nav class="mobilenav">
-          <img src="assets/close.png" alt="" class="close-button">
-          <a href="/#">Home</a>
-          <a href="outlets.html">Outlets</a>
-          <a href="/#">Products</a>
-          <a href="/#">Production & Training</a>
-          <a href="/#">PMEGP</a>
-          <a href="assets/pdf/bee_keeping.pdf">BEE-KEEPING</a>
-          <a href="/#">About Us</a>
-          <a href="contact.html">CONTACT Us</a>
+          <img src="./assets/close.png" alt="mobile menu close button" class="close-button">
+          <a href="./">Home</a>
+          <a href="./outlets/">Outlets</a>
+          <a href="./products/">Products</a>
+          <a href="./production/">Production & Training</a>
+          <a href="./pmegp/">PMEGP</a>
+          <a href="./assets/pdf/bee_keeping.pdf">BEE-KEEPING</a>
+          <a href="./aboutus/">About Us</a>
+          <a href="./contacts/">CONTACT Us</a>
         </nav>
         <!-- mobile side drawer  -->
       </div>
@@ -41,13 +42,13 @@
       <!-- header class starts -->
       <div class="header">
         <div class="icon-sikkim">
-          <img src="assets/sikkim_govt_png@0.33x.png" alt="sikkim gov logo"> 
+          <img src="./assets/sikkim_govt_png@0.33x.png" alt="sikkim gov logo"> 
         </div>
         <div class="sikkim-khadi-icon">
-          <img src="assets/skvib@0.33x.png" alt="">
+          <img src="./assets/skvib@0.33x.png" alt="">
         </div>
         <div class="icon-khadiindia">
-          <img src="assets/khadi-india@0.33x.png" alt="">
+          <img src="./assets/khadi-india@0.33x.png" alt="">
         </div>
       </div>
       <!-- header class ends -->
@@ -56,14 +57,14 @@
       <!-- title text -->
       <!-- desktop navbar starts -->
       <nav class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="outlets.html">Outlets</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Production & Training</a></li>
-        <li><a href="#">PMEGP</a></li>
-        <li><a href="assets/pdf/bee_keeping.pdf" target="_blank">BEE-KEEPING</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>    
+        <li><a href="./">Home</a></li>
+        <li><a href="./outlets/">Outlets</a></li>
+        <li><a href="./products/">Products</a></li>
+        <li><a href="./products/">Production & Training</a></li>
+        <li><a href="./pmegp/">PMEGP</a></li>
+        <li><a href="./assets/pdf/bee_keeping.pdf" target="_blank">BEE-KEEPING</a></li>
+        <li><a href="./aboutus/">About Us</a></li>
+        <li><a href="./contacts/">CONTACT US</a></li>    
       </nav>
       <!-- desktop navbar ends -->
       <!-- carousel starts -->
@@ -73,9 +74,9 @@
       <!-- carousel ends -->
       <!-- portraits starts -->
       <div class="portraits">
-        <img src="assets/images/cm/cm_pmgolay.png" class="clipped" alt="pm golay">
-        <img src="assets/images/mg/mg2.png" class="clipped" alt="mg">
-        <img src="assets/images/chairman/chairman.png" class="clipped" alt="chairman">
+        <img src="./assets/images/cm/cm_pmgolay.png" class="clipped" alt="pm golay">
+        <img src="./assets/images/mg/mg2.png" class="clipped" alt="mg">
+        <img src="./assets/images/chairman/chairman.png" class="clipped" alt="chairman">
       </div>
       <!-- portraits class ends here -->
       <!-- welcome starts -->
@@ -97,30 +98,105 @@
         </div>
       </div>
       <!-- welcome ends -->
-      <div class="gallery-row">
-        <div class="gallery-column">
-          <img src="./assets/images/gallery/Duree_ex_1.jpg" alt="">
-          <img src="./assets/images/gallery/Duree_ex_2.jpg" alt="">
-          <img src="./assets/images/gallery/Honey_ex_1.jpg" alt="">
-          <img src="./assets/images/gallery/Honey_ex_2.jpg" alt="">
-        </div>
-        <div class="gallery-column">
-          <img src="./assets/images/gallery/Saree_ex_1.jpg" alt="">
-          <img src="./assets/images/gallery/Saree_ex_2.jpg" alt="">
-          <img src="./assets/images/gallery/Saree_ex_3.jpg" alt="">
-          <img src="./assets/images/gallery/Saree_ex_4.jpg" alt="">
-        </div>
-        <div class="gallery-column">
-          <img src="./assets/images/gallery/Shawl_ex_1.jpg" alt="">
-          <img src="./assets/images/gallery/Shawl_ex_2.jpg" alt="">
-          <img src="./assets/images/gallery/Shawl_ex_3.jpg" alt="">
-          <img src="./assets/images/gallery/Singtam_ex_1.jpg" alt="">
-        </div>
-        <div class="gallery-column">
-          <img src="./assets/images/gallery/temitea_ex.jpg" alt="">
-          <img src="./assets/images/gallery/toileteries_ex_1.jpg" alt="">
-          <img src="./assets/images/gallery/Turmeric_ex_1.jpg" alt="">
-          <img src="./assets/images/gallery/temitea_ex_2.jpg" alt="">
+      <!-- gallery starts -->
+      <div>
+        <!-- gallery goes here -->
+        <div class="maingallery">
+          <div class="pictures" id="p4">
+            <img src="assets/images/gallery/mainGallery/img4.jpg" alt="">
+              <p class="overlay">SAREE</p>
+          </div>
+          
+          <div class="pictures" id="p5">
+            <img src="assets/images/gallery/mainGallery/img5.jpg" alt="">
+              <p class="overlay">INCENSE</p>
+          </div>
+          
+          <div class="pictures" id="p6">
+            <img src="assets/images/gallery/mainGallery/img6.jpg" alt="">
+              <p class="overlay">SAREE</p>
+          </div>
+          
+          <div class="pictures" id="p7">
+            <img src="assets/images/gallery/mainGallery/img7.jpg" alt="">
+              <p class="overlay">NAMCHI</p>
+          </div>
+          
+          <div class="pictures" id="p8">
+            <img src="assets/images/gallery/mainGallery/img8.jpg" alt="">
+              <p class="overlay">QUILT</p>
+          </div>
+          
+          <div class="pictures" id="p9">
+            <img src="assets/images/gallery/mainGallery/img9.jpg" alt="">
+              <p class="overlay">PILLOW</p>
+          </div>
+          
+          <div class="pictures" id="p10">
+            <img src="assets/images/gallery/mainGallery/img10.jpg" alt="">
+              <p class="overlay">GYALSING</p>
+          </div>
+          
+          <div class="pictures" id="p11">
+            <img src="assets/images/gallery/mainGallery/img11.jpg" alt="">
+              <p class="overlay">TURMERIC</p>
+          </div>
+          
+          <div class="pictures" id="p12">
+            <img src="assets/images/gallery/mainGallery/img12.jpg" alt="">
+              <p class="overlay">TARKU</p>
+          </div>
+          
+          <div class="pictures" id="p13">
+            <img src="assets/images/gallery/mainGallery/img13.jpg" alt="">
+              <p class="overlay">TEMI-TEA</p>
+          </div>
+          
+          <div class="pictures" id="p14">
+            <img src="assets/images/gallery/mainGallery/img14.jpg" alt="">
+              <p class="overlay">SHAWL</p>
+          </div>
+          <div class="pictures" id="p15">
+            <img src="assets/images/gallery/mainGallery/img15.jpg" alt="">
+              <p class="overlay">HONEY</p>
+          </div>
+          <div class="pictures" id="p16">
+            <img src="assets/images/gallery/mainGallery/img16.jpg" alt="">
+              <p class="overlay">TURUK</p>
+          </div>
+          <div class="pictures" id="p17">
+            <img src="assets/images/gallery/mainGallery/img17.jpg" alt="">
+              <p class="overlay">SAREE</p>
+          </div>
+          <div class="pictures" id="p18">
+            <img src="assets/images/gallery/mainGallery/img18.jpg" alt="">
+              <p class="overlay">BEE-BOX</p>
+          </div>
+          <div class="pictures" id="p19">
+            <img src="assets/images/gallery/mainGallery/img19.jpg" alt="">
+              <p class="overlay">OUTLETS</p>
+          </div>
+          
+          <div class="pictures" id="p20">
+            <img src="assets/images/gallery/mainGallery/img20.jpg" alt="">
+              <p class="overlay">SHAWL</p>
+          </div>
+          
+          <div class="pictures" id="p1">
+            <img src="assets/images/gallery/mainGallery/img1.jpg" alt="">
+              <p class="overlay">TOILETERIES</p>
+          </div>
+          
+          <div class="pictures" id="p2">
+            <img src="assets/images/gallery/mainGallery/img2.jpg" alt="">
+              <p class="overlay">HONEY</p>
+          </div>
+
+          <div class="pictures" id="p3">
+            <img src="assets/images/gallery/mainGallery/img3.jpg" alt="">
+              <p class="overlay">DUREE</p>
+          </div>
+          
         </div>
       </div>
       <!-- gallery ends -->
