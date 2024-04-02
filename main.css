@@ -304,13 +304,21 @@ font-size:23px;
 /* ================= EVENT START ==================== */
 .events {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: #f8deb5;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
 }
+
+.events .container {
+  display: flex;
+  flex-direction: column;
+}
+
 .events .card {
   /* Add shadows to create the "card" effect */
+  padding: 20px; 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 33%;
@@ -318,8 +326,18 @@ font-size:23px;
 
 .card .card-title {
     font-size: 1.8rem;
+    font-weight: 400;
+    color: #CD8614;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #f9e5c5;
+    padding: 1rem;
+    border: 0.5px solid #ea9f2a;
+    border-radius: 9px;
+    flex: 0 0 auto;
+    align-self: flex-start;
   }
+
 .card a {
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -332,12 +350,6 @@ font-size:23px;
 }
 
 /* Add some padding inside the card container */
-.events .container {
-  padding-top: 2rem; 
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  padding-bottom: 2rem; 
-}
 /* ================= EVENT END ==================== */
 
 /* FOOTER STARTS */
