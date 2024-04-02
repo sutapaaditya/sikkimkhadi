@@ -9,14 +9,12 @@ let stripSlashes = (str) => {
 }
 
 theUrl = stripSlashes(currentURL);
-console.log(stripSlashes(currentURL));
 
 function getLastPathComponent(path) {
-    // Split the path by '/' delimiter and get the last part
-    const parts = path.split('/');
-    return parts[parts.length - 2]; // Return the second-to-last part
+  // Split the path by '/' delimiter and get the last part
+  const parts = path.split('/');
+  return parts[parts.length - 2]; // Return the second-to-last part
 }
-
 
 nlinks.forEach(link => {
   let s = link.getAttribute('href');
@@ -27,21 +25,21 @@ nlinks.forEach(link => {
   };
 });
 
+
+hamburger.addEventListener('click', () => {
+  mobilenav.classList.toggle("navopen");
+  // below code sets the body to fixed position to 
+  // disable scrolling in mobile 
+  // whil navbar is open
+  document.body.classList.toggle("fixedPosition"); 
+})
+
+closeButton.addEventListener('click', () =>{
+  mobilenav.classList.toggle("navopen");
+  document.body.classList.toggle("fixedPosition");
+})
+
 if ((stripSlashes(currentURL)) === 'index.html') {
-
-  hamburger.addEventListener('click', () => {
-    mobilenav.classList.toggle("navopen");
-    // below code sets the body to fixed position to 
-    // disable scrolling in mobile 
-    // whil navbar is open
-    document.body.classList.toggle("fixedPosition"); 
-  })
-
-  closeButton.addEventListener('click', () =>{
-    mobilenav.classList.toggle("navopen");
-    document.body.classList.toggle("fixedPosition");
-  })
-
   let pics =[
     {
       "pic":"./assets/images/carousel/buddha.jpg",
