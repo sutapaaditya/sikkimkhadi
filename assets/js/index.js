@@ -4,6 +4,7 @@ const mobilenav = document.querySelector(".mobilenav");
 const nlinks = document.querySelectorAll('.navigation a');
 let currentURL = window.location.pathname;
 
+// functions for navigation link highlight
 let stripSlashes = (str) => {
   return str.replace(/^\/+|\/+$/g, '');
 }
@@ -24,8 +25,10 @@ nlinks.forEach(link => {
     link.parentElement.classList.add('nav__active');
   };
 });
+// functions for navigation link highlight ends
 
 
+// code for hamburger
 hamburger.addEventListener('click', () => {
   mobilenav.classList.toggle("navopen");
   // below code sets the body to fixed position to 
@@ -38,44 +41,4 @@ closeButton.addEventListener('click', () =>{
   mobilenav.classList.toggle("navopen");
   document.body.classList.toggle("fixedPosition");
 })
-
-if ((stripSlashes(currentURL)) === 'index.html') {
-  let pics =[
-    {
-      "pic":"./assets/images/carousel/buddha.jpg",
-    },
-    {
-      "pic":"./assets/images/carousel/cosmetics.jpg",
-    },
-
-    {
-      "pic":"./assets/images/carousel/office.jpg",
-    },
-    {
-      "pic":"./assets/images/carousel/turmerics.jpg",
-    },
-    {
-      "pic":"./assets/images/carousel/products2.jpg",
-    }
-  ]
-
-  let p = document.getElementById("dp")
-  let idx = 0;
-  p.src = pics[idx]["pic"];
-
-  function main () {
-    idx = idx+1;
-
-    if(idx==pics.length) {
-      idx = 0;
-    }
-
-    p.style.opacity = '0';
-
-    setTimeout(() =>{
-      p.src =pics[idx]["pic"];
-      p.style.opacity ='1';
-    },1000)
-  } 
-  setInterval(main, 9000)
-}
+// code for hamburger ends
