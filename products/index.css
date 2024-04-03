@@ -167,6 +167,10 @@
 
 
 @media (max-width:768px) {
+  .gallery {
+    border: 1px solid #F1BB67;
+  }
+
   .gallery .saree {
     max-width:100%;
     grid-template-areas: 
