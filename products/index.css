@@ -426,7 +426,7 @@
     "tr5 tr5"
     "tr7 tr7";
   }
-  
+
   .gallery .temitea {
     max-width:100%;
     grid-template-areas: 
@@ -434,8 +434,7 @@
     "tm2 tm3"
     "tm4 tm4";
   }
-  
-  
+
   .gallery .quilt {
     max-width:100%;
     grid-template-areas: 
@@ -456,7 +455,7 @@
     "s2 s2"
     "s3 s3";
   }
-  
+
   .gallery .duree {
     max-width:100%;
     grid-template-areas: 
@@ -465,7 +464,7 @@
     "dr4 dr4"
     "dr5 dr5";
   }
-  
+
   .gallery .honey {
     max-width:100%;
     grid-template-areas: 
@@ -473,7 +472,7 @@
     "hn2 hn3"
     "hn4 hn4" ;
   }
-  
+
   .gallery .ins {
     max-width:100%;
     grid-template-areas: 
@@ -526,7 +525,7 @@
     "tr4 tr4"
     "tr5 tr7";
   }
-  
+
   .gallery .temitea {
     max-width:100%;
     grid-template-areas: 
