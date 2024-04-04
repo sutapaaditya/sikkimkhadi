@@ -1,0 +1,92 @@
+
+.gallery {
+  padding: 2rem;
+  position: relative;
+}
+
+.product {
+  position: relative;
+}
+
+.productHeading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.gallery h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #322105;
+  display: inline-block;
+  background-color: #F6D7A6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.product img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.gallery .honey {
+  margin-top: 1rem;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 50rem);
+  grid-template-areas:
+  "hn1 hn1 hn1"
+  "hn2 hn2 hn3"
+  "hn4 hn4 hn4";
+  width:100%;
+  height:100%;
+  gap: 16px;
+
+}
+
+#hn1 {
+  grid-area: hn1; 
+
+}
+
+#hn2 {
+  grid-area:hn2;
+}
+
+#hn3 {
+  grid-area: hn3;
+}
+
+#hn4 {
+  grid-area: hn4;
+}
+
+@media (max-width:1100px) {
+  .gallery .honey {
+    max-width:100%;
+   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 70rem);
+    grid-template-areas: 
+    "hn1 hn1"
+    "hn2 hn3"
+    "hn4 hn4" ;
+  }
+}
+
+@media (max-width:768px) {
+  .gallery .honey {
+    max-width:100%;
+   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 30rem);
+    grid-template-areas: 
+    "hn1 "
+    "hn2 "
+    "hn3"
+    "hn4 " ;
+  }
+}
+
+

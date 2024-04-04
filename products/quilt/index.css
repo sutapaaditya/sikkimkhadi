@@ -1,0 +1,85 @@
+
+.gallery {
+  padding: 2rem;
+  position: relative;
+}
+
+.product {
+  position: relative;
+}
+
+.productHeading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.gallery h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #322105;
+  display: inline-block;
+  background-color: #F6D7A6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.product img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.gallery .quilt {
+  margin-top: 1rem;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 55rem);
+  grid-template-areas:
+  "q1 q1 q1 "
+  "q2 q2 q3 ";
+  width:100%;
+  height:100%;
+  gap: 16px;
+
+}
+
+
+#q1 {
+  grid-area: q1; 
+
+}
+
+#q2 {
+  grid-area:q2;
+}
+
+#q3 {
+  grid-area: q3;
+}
+
+@media (max-width:1100px) {
+  .gallery .quilt {
+    max-width:100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 60rem);
+    grid-template-areas: 
+    "q1 q1"
+    "q2 q2"
+    "q3 .";
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery .quilt {
+    max-width:100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 30rem);
+    grid-template-areas: 
+    "q1 q1"
+    "q2 q2"
+    "q3 q3";
+  }
+}

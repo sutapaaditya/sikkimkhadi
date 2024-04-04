@@ -1,0 +1,144 @@
+.gallery {
+  padding: 2rem;
+  position: relative;
+}
+
+.product {
+  position: relative;
+}
+
+.productHeading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.gallery h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #322105;
+  display: inline-block;
+  background-color: #F6D7A6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.gallery .saree {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 30rem);
+  grid-template-areas: 
+  "saree1 saree1 saree2"
+  "saree1 saree1 saree2"
+  "saree3 saree4 saree4"
+  "saree3 saree5 saree5"
+  "saree6 saree6 saree7"
+  "saree8 saree9 saree9"
+  "saree10 saree11 saree12";
+  gap: 16px;
+
+  width:100%;
+  height:100%;
+}
+
+#saree1 {
+  grid-area: saree1;
+}
+
+#saree2 {
+  grid-area: saree2;
+}
+
+#saree3 {
+  grid-area: saree3;
+  height:700px;
+}
+
+#saree4 {
+  grid-area: saree4;
+}
+
+#saree5 {
+  grid-area: saree5;
+}
+
+#saree6 {
+  grid-area: saree6;
+}
+
+#saree7 {
+  grid-area: saree7;
+
+}
+
+#saree8 {
+  grid-area: saree8;
+}
+
+#saree9 {
+  grid-area: saree9;
+}
+
+#saree10 {
+  grid-area: saree10;
+}
+
+#saree11 {
+  grid-area: saree11;
+}
+
+#saree11 {
+  grid-area:saree12;
+}
+
+.product img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+}
+
+@media (max-width:1100px) {
+  .gallery .saree {
+    max-width:100%;
+   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 70rem);
+    grid-template-areas:
+    "saree1 saree1"
+    "saree2 saree3"
+    "saree4 saree4"
+    "saree5 saree5"
+    "saree6 saree6"
+    "saree7 saree8"
+    "saree9 saree9"
+    "saree10 saree11"
+    "saree12 saree12 ";
+
+  }
+    
+}  
+
+@media (max-width:768px) {
+  .gallery {
+    border: 1px solid #F1BB67;
+  }
+
+  .gallery .saree {
+    max-width:100%;
+   grid-template-rows: repeat(10,  25rem);
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "saree1 saree1"
+    "saree2 saree2"
+    "saree3 saree4"
+    "saree3 saree5"
+    "saree6 saree6"
+    "saree7 saree7"
+    "saree8 saree8"
+    "saree9 saree9"
+    "saree10 saree11"
+    "saree12 saree12";
+  }
+}

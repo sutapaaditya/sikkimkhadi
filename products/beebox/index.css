@@ -1,0 +1,88 @@
+.gallery {
+  padding: 2rem;
+  position: relative;
+}
+
+.product {
+  position: relative;
+}
+
+.productHeading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.gallery h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #322105;
+  display: inline-block;
+  background-color: #F6D7A6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.product img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.gallery .beebox {
+  margin-top: 1rem;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 40rem);
+  grid-template-areas:
+  "b1 b1 b2 "
+  "b1 b1 b2 "
+  "b3 b3 b3"
+  "b4 b4 b4";
+  width:100%;
+  height:100%;
+  gap: 16px;
+}
+
+#b1 {
+  grid-area: b1; 
+}
+
+#b2 {
+  grid-area:b2;
+}
+
+#b3 {
+  grid-area: b3;
+}
+
+#b4 {
+  grid-area: b4;
+}
+
+@media (max-width:1100px) {
+  .gallery .beebox {
+    max-width:100%;
+   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40rem);
+    grid-template-areas: 
+    "b1 b1"
+    "b2 b3"
+    "b4 b4";
+  }
+}
+
+@media (max-width:768px) {
+  .gallery .beebox {
+    max-width:100%;
+   grid-template-rows: repeat(4,  40rem);
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "b1 b1"
+    "b2 b2"
+    "b3 b3"
+    "b4 b4";
+  }
+}
