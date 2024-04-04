@@ -26,6 +26,16 @@
   gap: 1rem;
 }
 
+.box:hover {
+  color: #7F530D;
+  background-color: #F9E5C5;
+  border-radius: 1rem;
+  box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+  25px 0px 20px -20px rgba(0,0,0,0.45),
+  0px 25px 20px -20px rgba(0,0,0,0.45),
+  -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+
 .box span:nth-of-type(1) {
   font-size: 2rem;
   font-weight: 600;
