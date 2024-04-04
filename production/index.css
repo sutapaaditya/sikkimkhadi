@@ -1,5 +1,44 @@
+.ytd-container {
+  padding: 5%;
+  border: 1px solid #F1BB67;
+  background-color: #F3C987;
+  position: relative;
+}
+
+h1 {
+  color: #70490b;
+  border-bottom: 1px solid #70490b;
+  text-align: center;
+  position: absolute;
+  top:10px;
+}
+
 .ytv {
   display: flex;
   justify-content: center;
   padding: 1rem;
+
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 2.5rem;
+	height: 0;
+}
+
+.ytv iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+iframe {
+  border: 1px solid #70490b;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .ytd-container:first-child, :not(.ytd-container) + .ytd-container {
+    padding-top: 15%;
+  }
 }
