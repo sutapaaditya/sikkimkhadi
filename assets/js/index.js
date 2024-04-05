@@ -5,7 +5,6 @@ const mobilenav = document.querySelector(".mobilenav");
 const nlinks = document.querySelectorAll('.navigation a');
 let currentURL = window.location.pathname;
 
-// functions for navigation link highlight
 let stripSlashes = (str) => {
   return str.replace(/^\/+|\/+$/g, '');
 }
@@ -13,9 +12,8 @@ let stripSlashes = (str) => {
 theUrl = stripSlashes(currentURL);
 
 function getLastPathComponent(path) {
-  // Split the path by '/' delimiter and get the last part
   const parts = path.split('/');
-  return parts[parts.length - 2]; // Return the second-to-last part
+  return parts[parts.length - 2];
 }
 
 nlinks.forEach(link => {
@@ -26,40 +24,34 @@ nlinks.forEach(link => {
     link.parentElement.classList.add('nav__active');
   };
 });
-// functions for navigation link highlight ends
 
-window.onscroll = function() {scrollFunction()}
+document.addEventListener('DOMContentLoaded', () => {
+  let query = window.matchMedia("(max-width: 768px)");
 
-function scrollFunction() {
-  // console.log(document.documentElement.scrollTop);
-  if (document.documentElement.scrollTop > 105) {
-    document.querySelector(".mobileNavBar").style.display = 'flex';
-    hamburger.style.display = 'none';
-  } else {
-    document.querySelector(".mobileNavBar").style.display = 'none';
-    hamburger.style.display = 'block';
+  if(query.matches) {
+
+    window.onscroll = function() {scrollFunction()}
+
+    function scrollFunction() {
+      if (document.documentElement.scrollTop > 105) {
+        document.querySelector(".mobileNavBar").style.display = 'flex';
+        hamburger.style.display = 'none';
+      } else {
+        document.querySelector(".mobileNavBar").style.display = 'none';
+        hamburger.style.display = 'block';
+      }
+    }
   }
-}
+})
 
-// code for hamburger
 hamburger.addEventListener('click', () => {
   mobilenav.classList.toggle("navopen");
-  // below code sets the body to fixed position to 
-  // disable scrolling in mobile 
-  // whil navbar is open
-  // document.body.classList.toggle("fixedPosition"); 
 })
 
 hHamburger.addEventListener('click', () => {
   mobilenav.classList.toggle("navopen");
-  // below code sets the body to fixed position to 
-  // disable scrolling in mobile 
-  // whil navbar is open
-  // document.body.classList.toggle("fixedPosition"); 
 })
 
 closeButton.addEventListener('click', () =>{
   mobilenav.classList.toggle("navopen");
-  // document.body.classList.toggle("fixedPosition");
 })
-// code for hamburger ends
