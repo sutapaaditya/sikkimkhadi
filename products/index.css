@@ -1,32 +1,17 @@
-.tempLinks {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  gap: 1rem;
-  padding: 3rem;
-
-}
-
-.tempLinks a {
-  font-size: 2rem;
-}
 
 main {
-  padding: 0.5rem; 
+  padding: 2rem;
   border: 1px solid #F1BB67;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  /* font-family: "Roboto", sans-serif; */
 }
 
 .card {
-  width: 36rem;
-  height: 54rem;
+  width: 25rem;
+  height: 37.5rem;
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
@@ -97,4 +82,16 @@ main {
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+
+  main {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 90%;
+  }
 }

@@ -93,7 +93,7 @@
 
 @media (max-width: 768px) {
   .acontents {
-    max-width: 95%;
+    max-width: 100%;
   }
 
   .introContent {
@@ -112,5 +112,17 @@
 
   .bdirectors ol {
     margin-left: 1rem;
+  }
+
+  .introduction:hover,
+  .bdirectors:hover, 
+  .bobjectives:hover,
+  .skvibact:hover {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #7F530D;
+    background-color: #F9E5C5;
+    border-radius: 0.5rem;
+    box-shadow: none;
   }
 }

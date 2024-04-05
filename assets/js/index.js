@@ -1,4 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
+const hHamburger = document.querySelector(".hidden-hamburger");
 const closeButton = document.querySelector(".close-button");
 const mobilenav = document.querySelector(".mobilenav");
 const nlinks = document.querySelectorAll('.navigation a');
@@ -27,6 +28,18 @@ nlinks.forEach(link => {
 });
 // functions for navigation link highlight ends
 
+window.onscroll = function() {scrollFunction()}
+
+function scrollFunction() {
+  // console.log(document.documentElement.scrollTop);
+  if (document.documentElement.scrollTop > 105) {
+    document.querySelector(".mobileNavBar").style.display = 'flex';
+    hamburger.style.display = 'none';
+  } else {
+    document.querySelector(".mobileNavBar").style.display = 'none';
+    hamburger.style.display = 'block';
+  }
+}
 
 // code for hamburger
 hamburger.addEventListener('click', () => {
@@ -34,11 +47,19 @@ hamburger.addEventListener('click', () => {
   // below code sets the body to fixed position to 
   // disable scrolling in mobile 
   // whil navbar is open
-  document.body.classList.toggle("fixedPosition"); 
+  // document.body.classList.toggle("fixedPosition"); 
+})
+
+hHamburger.addEventListener('click', () => {
+  mobilenav.classList.toggle("navopen");
+  // below code sets the body to fixed position to 
+  // disable scrolling in mobile 
+  // whil navbar is open
+  // document.body.classList.toggle("fixedPosition"); 
 })
 
 closeButton.addEventListener('click', () =>{
   mobilenav.classList.toggle("navopen");
-  document.body.classList.toggle("fixedPosition");
+  // document.body.classList.toggle("fixedPosition");
 })
 // code for hamburger ends
