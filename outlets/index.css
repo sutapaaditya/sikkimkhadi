@@ -1,0 +1,55 @@
+.outlets {
+  display: grid;
+  grid-template-columns: repeat(2, 50rem);
+  grid-template-rows:repeat(3, 1fr);
+  gap: 1rem;
+  place-content: center;
+  border: 1px solid #f2c377;
+  padding: 1.5rem;
+}
+
+.outlets__item {
+  position: relative;
+}
+
+.outlets__item img {
+  width: 50rem;
+  border-radius: 1rem;
+  object-fit: cover;
+
+}
+
+.outlets__text {
+  position: absolute;
+  color: #70490B;
+  inset: auto 0 0 0; 
+  background-color: #fff;
+  overflow: hidden;
+
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+
+}
+
+.outlets__item a {
+  position: absolute;
+  inset: auto 0 10px 200px;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  opacity: 0.125;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  color: inherit;
+  text-decoration: none;
+}
+
+.outlets__item a:hover {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
