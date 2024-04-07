@@ -1,3 +1,26 @@
+.production__pictures {
+  background-color: #F3C987;
+  border: 1px solid #F1BB67;
+}
+
+.production__center {
+  display: grid;
+  grid-template-columns: repeat(2, 50rem);
+  grid-template-rows:repeat(2, 1fr);
+  gap: 1rem;
+  place-content: center;
+  padding: 1.5rem;
+}
+
+.production__headings {
+  padding: 2rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #70490b;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .ytd-container {
   padding: 5%;
   border: 1px solid #F1BB67;
