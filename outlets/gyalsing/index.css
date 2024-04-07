@@ -1,0 +1,37 @@
+.outlets_l {
+  padding: 2rem;
+ border: 1px solid #f2c377;
+}
+
+.location img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.outlets_l .gyalshing {
+  margin-top: 1rem;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "gl1 gl1 gl2"
+  "gl1 gl1 gl4"
+  "gl5 gl6 gl6";
+  width:100%;
+  height:100%;
+  gap: 16px;
+}
+
+#gl1 {
+  grid-area: gl1; 
+}
+
+#gl2 {
+  grid-area: gl2; 
+}
+
+#gl3 {
+  grid-area: gl4; 
+}
+
