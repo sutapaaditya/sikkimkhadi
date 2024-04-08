@@ -53,3 +53,32 @@
 .material-symbols-outlined {
   vertical-align: middle;
 }
+  
+@media (max-width:768px) {
+.outlets {
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .outlets__item img {
+      max-width: 100%;
+  }
+  
+  .outlets__text {
+    inset: auto auto 1rem 1rem; 
+
+    padding: 1rem 2rem;
+
+  }
+
+  .outlets__item a {
+    inset: auto 0 2rem auto;
+    opacity: 1;
+
+    max-width: 80%;
+  }
+  .material-symbols-outlined {
+    margin-right: 0.5rem;
+  }
+} 
