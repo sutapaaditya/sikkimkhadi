@@ -1,22 +1,22 @@
 
 .maingallery {
-/* margin-top:53px; */
-display:grid;
-grid-template-areas:
-"m4 m5 m5 m6"
-"m4 m5 m5 m6"
-"m7 m7 m8 m9"
-"m10 m11 m11 m12"
-"m10 m11 m11 m12"
-"m13 m13 m14 m14"
-"m13 m13 m14 m14"
-"m15 m15 m16 m16"
-"m17 m17 m18 m18"
-"m19 m19 m20 m20"
-"m19 m19 m20 m20"
-"m1 m1 m2 m2"
-"m3 m3  m2 m2";
-gap: 16px;;
+  margin-top: 1rem;
+  display:grid;
+  grid-template-areas:
+  "m4 m5 m5 m6"
+  "m4 m5 m5 m6"
+  "m7 m7 m8 m9"
+  "m10 m11 m11 m12"
+  "m10 m11 m11 m12"
+  "m13 m13 m14 m14"
+  "m13 m13 m14 m14"
+  "m15 m15 m16 m16"
+  "m17 m17 m18 m18"
+  "m19 m19 m20 m20"
+  "m19 m19 m20 m20"
+  "m1 m1 m2 m2"
+  "m3 m3  m2 m2";
+  gap: 16px;;
 }
 
 #p1 {
@@ -107,47 +107,44 @@ gap: 16px;;
   display:flex;
   justify-content: center;
   align-items: center;
-  
 }
-
-
-
 
 .pictures img {
   width:100%;
   object-fit:cover;
   height:100%;
-
-
 }
 
 .pictures .overlay {
-color: #231603;
-position:absolute;
-top: 0;
-left:0;
-background-color: rgba(255, 255, 255, 0.1);
-width:100%;
-height:100%;
-display:flex;
-justify-content:center; 
-align-items:center;
-font-size:36px;
-font-weight:900;
-letter-spacing:2px;
-opacity:0;
-transition:opacity 0.2s cursor 0.2s ease;
+  color: #231603;
+  position:absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  inset: auto auto -50px 10px;
+  background-color: #fff;
+  font-size: 2.4rem;
+  font-weight:900;
+  z-index: 3;
+  opacity:0;
+  transition: all 0.3s ease;
 }
 
-.pictures .overlay:hover {
-opacity:1;
-cursor:pointer;
+.pictures a {
+  text-decoration: none;
+}
+
+.pictures:hover .overlay {
+  opacity:1;
+  cursor:pointer;
+  inset: auto auto 10px 10px;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
 }
 
 @media (max-width: 1100px) {
-
  .maingallery {
-    
     grid-template-areas:
       "m4 m5 m5"
       "m4 m6 m6"
@@ -171,7 +168,6 @@ cursor:pointer;
   .maingallery {
     max-width:100%;
     padding:1rem;
-      
     grid-template-areas:
       "m4 m4"
       "m5 m5"
@@ -192,8 +188,6 @@ cursor:pointer;
       "m20 m1"
       "m3 m3"
       "m2 m2" ;
-   
-    
   }
 .pictures .overlay {
     font-size:28px;
