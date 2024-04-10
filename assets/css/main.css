@@ -446,6 +446,10 @@ font-size:23px;
   color: #cd8514;
 }
 
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
 @media (min-width:810px) {
     .hr {
       display: none;
