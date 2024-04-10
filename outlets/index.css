@@ -57,7 +57,7 @@
 @media (max-width:768px) {
 .outlets {
     grid-template-columns: 1fr;
-    grid-template-rows:repeat(2, 1fr);
+    grid-template-rows:repeat(6, 1fr);
     gap: 1rem;
   }
 

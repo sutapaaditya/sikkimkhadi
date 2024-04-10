@@ -30,9 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if(query.matches) {
 
+    const bbutton = document.querySelector(".back-button");
+
     window.onscroll = function() {scrollFunction()}
 
     function scrollFunction() {
+      if (bbutton) {
+        if (document.documentElement.scrollTop > 200 && document.documentElement.scrollTop < 2000 ) {
+          bbutton.style.display = 'block';
+          bbutton.style.bottom = '2rem';
+          bbutton.style.opacity = '1';
+        } else {
+          bbutton.style.display = 'none';
+          bbutton.style.bottom = '-15rem';
+          bbutton.style.opacity = '0';
+        }
+      }
+
       if (document.documentElement.scrollTop > 105) {
         document.querySelector(".mobileNavBar").style.display = 'flex';
         hamburger.style.display = 'none';
