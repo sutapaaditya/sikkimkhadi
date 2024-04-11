@@ -61,7 +61,7 @@ html {
   left: 0;
   right: 0;
   
-  z-index: 2;
+  z-index: 999;
 }
 
 .mobileNavBar img {
@@ -126,7 +126,7 @@ html {
   align-items:center;
   flex-direction:column;
   position:fixed; 
-  z-index:2;
+  z-index:999;
   top:0;
   right:-2000px;
   padding:16px;
@@ -257,58 +257,6 @@ font-size:23px;
 
 .welcome ol {
     margin-left: 8rem;
-}
-
-.contact_us {
-  background-color: #f2c377;
-  color: rgb(112, 73, 11);
-  font-size: 1.8rem;
-  padding: 2rem 10%;
-}
-
-.btn {
-  background-color: rgb(205, 134, 20);
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 1rem 3rem;
-  margin-bottom: 1.5rem;
-  border-radius: 1.5rem;
-  display: inline-block;
-  }
-
-.contact_us p {
-    font-size: 2rem;
-    font-weight: 500;
-    text-decoration: underline;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
-
-.contact_us li {
-    margin-bottom: 1.5rem;
-  }
-  
-.gallery {
-  background-color: #f2c377;
-}
-
-.gallery-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.gallery-column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.gallery-column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
 }
 
 .events {
@@ -460,7 +408,7 @@ font-size:23px;
   transform: translateX(-50%);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  z-index: 999; /* Ensure it's above other content */
+  z-index: 555; /* Ensure it's above other content */
   transition: all 0.3s ease;
 }
 
