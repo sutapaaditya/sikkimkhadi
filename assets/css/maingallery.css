@@ -116,7 +116,7 @@
 }
 
 .pictures .overlay {
-  color: #231603;
+  color: rgb(112, 73, 11);
   position:absolute;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
