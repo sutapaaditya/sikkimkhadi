@@ -1,0 +1,58 @@
+.tplace {
+  padding: 2rem;
+ border: 1px solid #f2c377;
+}
+
+.centre img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.tplace .dodak {
+  margin-top: 1rem;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 55rem);
+    grid-template-areas: 
+    "d1 d1 d2 d2"
+    "d3 d3 d4 d4"
+    "d5 d5 . . ";
+  width:100%;
+  height:100%;
+  gap: 16px;
+}
+
+#d1 {
+  grid-area: d1; 
+}
+#d2 {
+  grid-area: d2; 
+}
+
+#d3 {
+  grid-area: d3; 
+}
+
+#d4 {
+  grid-area: d4; 
+}
+
+#d5 {
+  grid-area: d5; 
+}
+
+@media (max-width:768px) {
+  .tplace .dodak {
+    max-width:100%;
+   grid-template-rows: repeat(5,  40rem);
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "d1 d1"
+    "d2 d2"
+    "d3 d3"
+    "d4 d4"
+    "d5 d5";
+  }
+
+}
