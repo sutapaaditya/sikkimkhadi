@@ -1,6 +1,7 @@
 .pageContainer {
   background-color: #F5D096;
   border: 1px solid #F1BB67;
+  user-select: none;
 }
 
 .acontents {
