@@ -1,6 +1,7 @@
 .gallery {
   padding: 1rem;
   position: relative;
+ border: 1px solid #f2c377;
 }
 
 .product {
