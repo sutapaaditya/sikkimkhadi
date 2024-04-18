@@ -47,6 +47,28 @@
 #s6 {
   grid-area: s6; 
 }
+.back-button {
+  display: none;
+  position: fixed;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #fcf3e4;
+  color: #322105;
+  text-decoration: none;
+  bottom: -15rem; /* Adjust as needed */
+  opacity: 0;
+  left: 30%; /* Position horizontally in the middle */
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  z-index: 555; /* Ensure it's above other content */
+  transition: all 0.3s ease;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
 
 @media (max-width:1100px) {
   .outlets_l .singtam {
