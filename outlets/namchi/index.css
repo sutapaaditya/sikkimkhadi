@@ -1,12 +1,22 @@
 .outlets_l {
   padding: 2rem;
- border: 1px solid #f2c377;
+  border: 1px solid #f2c377;
 }
 
 .location img {
   width:100%;
   height:100%;
   object-fit:cover;
+}
+
+.outlet_address {
+  display: inline-block;
+  background-color: rgba(205, 134, 20, 0.8);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  color: #fcf3e4;
+  font-size: 1.5rem;
+  letter-spacing: 0.075rem; 
 }
 
 .outlets_l .namchi {
@@ -17,8 +27,8 @@
   grid-template-areas:
   "n1 n1 n2 n2"
   "n3 n3 n2 n2"
-   "n4 n4 n5 n5"
-   "n6 n6 n6 n7";
+  "n4 n4 n5 n5"
+  "n6 n6 n6 n7";
   width:100%;
   height:100%;
   gap: 16px;

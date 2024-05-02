@@ -9,6 +9,16 @@
   object-fit:cover;
 }
 
+.outlet_address {
+  display: inline-block;
+  background-color: rgba(205, 134, 20, 0.8);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  color: #fcf3e4;
+  font-size: 1.5rem;
+  letter-spacing: 0.075rem; 
+}
+
 .outlets_l .deorali {
   margin-top: 1rem;
   display:grid;
